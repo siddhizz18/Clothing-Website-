@@ -38,10 +38,10 @@ export default function Home() {
           top-6
           left-1/2
           z-30
-          w-[95%]
+          w-[90%]
           -translate-x-1/2
           px-10
-          py-5
+          py-3
           flex
           justify-end
           items-center
@@ -53,7 +53,7 @@ export default function Home() {
           rounded-full
         "
         >
-          <div className="flex gap-14 uppercase text-xs tracking-[4px]">
+          <div className="flex gap-10 uppercase text-xs tracking-[3px]">
             <a href="/collections">Collections</a>
             <a href="/about">About</a>
             <a href="/cart">Cart</a>
@@ -65,11 +65,11 @@ export default function Home() {
 
           <div className="text-white ml-24">
 
-            <p className="uppercase tracking-[6px] text-sm mb-6">
+            <p className="uppercase tracking-[4px] text-xs mb-4">
               Spring / Summer 2026
             </p>
 
-            <h1 className="text-[120px] font-light leading-[0.9]">
+            <h1 className="text-[70px] md:text-[90px] font-light leading-[0.9]">
               White
               <br />
               Echo
@@ -80,9 +80,7 @@ export default function Home() {
               movement and everyday essentials.
             </p>
 
-            <button className="mt-8 border border-white px-8 py-4 uppercase hover:bg-white hover:text-black transition-all duration-300">
-              Explore →
-            </button>
+             
 
           </div>
 
@@ -95,7 +93,7 @@ export default function Home() {
 
         <div className="flex justify-between items-center mb-16">
 
-          <h2 className="text-5xl font-light uppercase tracking-[4px]">
+          <h2 className="text-5xl font-light uppercase tracking-[3px]">
             New In
           </h2>
 
