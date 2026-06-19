@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* NEW IN SECTION */}
-      <section className="relative z-20 bg-white px-12 py-24 rounded-t-[40px] mt-[100vh]">
+      <section className="relative z-20 bg-white px-12 py-24 rounded-t-[40px] -mt-32">
 
         <div className="flex justify-between items-center mb-16">
 
@@ -269,47 +269,68 @@ export default function Home() {
       </a>
       </div>
   </section>
+
+          
   {/* NEWSLETTER SECTION */}
-<section className="relative z-50 bg-white px-8 py-24 ">
-  <div className="max-w-4xl mx-auto text-center">
+  <section className="relative z-50 bg-white px-8 py-24">
 
-    <p className="uppercase tracking-[4px] text-sm mb-4">
-      Become A Member
-    </p>
+    <div className="max-w-4xl mx-auto text-center">
 
-    <h2 className="text-7xl font-light mb-6">
-      Join White Echo
-    </h2>
+      <p className="uppercase tracking-[4px] text-sm mb-4">
+        Become A Member
+      </p>
+      <h2 className="text-7xl font-light mb-6">
+        Join White Echo
+      </h2>
 
-    <p className="text-gray-500 mb-10">
-      Sign up and get 10% off your first purchase,
-      early access to new collections and exclusive offers.
-    </p>
+      <p className="text-gray-500 mb-10">
+        Sign up and get 10% off your first purchase,
+        early access to new collections and exclusive offers.
+      </p>
 
-    <div className="flex justify-center gap-4 max-w-xl mx-auto">
-      <input
-        type="email"
-        placeholder="Enter your email"
-        className="flex-1 border border-gray-300 px-6 py-4 outline-none"
+      <div className="flex justify-center gap-4 max-w-xl mx-auto">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          className="
+          flex-1
+          border
+          border-gray-300
+          px-6
+          py-4
+          outline-none
+        "
       />
 
       <button
-        className="bg-black text-white px-8 py-4 uppercase hover:bg-neutral-800 transition"
+        className="
+          bg-black
+          text-white
+          px-8
+          py-4
+          uppercase
+          hover:bg-neutral-800
+          transition
+        "
       >
         Sign Up
       </button>
+
     </div>
 
   </div>
-</section>
 
+</section>
 {/* FOOTER */}
-<footer className="relative z-50 bg-[#f7f7f7] px-8 py-16">
+<footer className="bg-[#f7f7f7] px-8 py-16">
 
   <div className="grid grid-cols-3 gap-20 mb-20">
 
+    {/* SHOP */}
     <div>
-      <h3 className="font-semibold mb-6">Shop</h3>
+      <h3 className="font-semibold mb-6">
+        Shop
+      </h3>
 
       <ul className="space-y-1 text-gray-600">
         <li className="hover:text-black cursor-pointer transition">
@@ -321,8 +342,11 @@ export default function Home() {
       </ul>
     </div>
 
+    {/* HELP */}
     <div>
-      <h3 className="font-semibold mb-6">Help</h3>
+      <h3 className="font-semibold mb-6">
+        Help
+      </h3>
 
       <ul className="space-y-1 text-gray-600">
         <li>Contact</li>
@@ -332,8 +356,11 @@ export default function Home() {
       </ul>
     </div>
 
+    {/* ABOUT */}
     <div>
-      <h3 className="font-semibold mb-6">About</h3>
+      <h3 className="font-semibold mb-6">
+        About
+      </h3>
 
       <ul className="space-y-1 text-gray-600">
         <li>Our Story</li>
@@ -347,66 +374,57 @@ export default function Home() {
   <div className="border-t pt-10">
 
     <div className="flex justify-between items-center">
-
       <p className="text-gray-500">
         © 2026 White Echo
       </p>
-
       <div className="flex gap-8">
         <a href="#">Instagram</a>
         <a href="#">Pinterest</a>
         <a href="#">YouTube</a>
       </div>
-
     </div>
-
   </div>
+  
+    {/* PAYMENTS */}
+      <div className="mt-16">
+        <h3 className="font-semibold mb-6">
+          Payments
+        </h3>
+        <div className="flex items-center gap-8 flex-wrap">
+          <img
+            src="/payments/cash-on-delivery.png"
+            alt="Cash on Delivery"
+            className="h-8 w-auto"
+          />
+          <img
+            src="/payments/visa.png"
+            alt="Visa"
+            className="h-8 w-auto"
+          />
+          <img
+            src="/payments/mastercard.png"
+            alt="Mastercard"
+            className="h-8 w-auto"
+          />
+          <img
+            src="/payments/upi.png"
+            alt="UPI"
+            className="h-8 w-auto"
+          />
+          <a
+            href="#"
+            className="underline text-gray-700 hover:text-black"
+          >
+            View all payment options
+          </a>
 
-  <div className="mt-16">
+        </div>
 
-    <h3 className="font-semibold mb-6">
-      Payments
-    </h3>
+      </div>
 
-    <div className="flex items-center gap-8 flex-wrap">
-
-      <img
-        src="/payments/cash-on-delivery.png"
-        alt="Cash on Delivery"
-        className="h-8 w-auto"
-      />
-
-      <img
-        src="/payments/visa.png"
-        alt="Visa"
-        className="h-8 w-auto"
-      />
-
-      <img
-        src="/payments/mastercard.png"
-        alt="Mastercard"
-        className="h-8 w-auto"
-      />
-
-      <img
-        src="/payments/upi.png"
-        alt="UPI"
-        className="h-8 w-auto"
-      />
-
-      <a
-        href="#"
-        className="underline text-gray-700 hover:text-black"
-      >
-        View all payment options
-      </a>
-
-    </div>
-
-  </div>
 
 </footer>
 
-</main>
+  </main>
   );
 }
